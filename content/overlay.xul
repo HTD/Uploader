@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<overlay
+  id="uploaderOverlay"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+>
+  <script type="application/x-javascript" src="chrome://xtk2/content/xtk2.js" />
+  <script type="application/x-javascript" src="chrome://uploader/content/uploader.js" />
+  <broadcasterset>
+    <broadcaster
+      id="cmd_uploader_upload"
+      key="key_uploader_upload"
+      desc="General: Upload"
+      oncommand="ko.extensions.uploader.cmdUpload();"
+    />   
+  </broadcasterset>
+  <menupopup id="popup_file">
+    <menuitem
+      id="menu_uploader_upload"
+      label="Upload"
+      observes="cmd_uploader_upload"
+      insertafter="menu_save"
+      class="menu-iconic-wide"
+    />
+  </menupopup>
+</overlay>

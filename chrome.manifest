@@ -1,0 +1,3 @@
+content xtk2 xtk2/
+content uploader content/
+overlay chrome://komodo/content/komodo.xul chrome://uploader/content/overlay.xul

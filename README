@@ -1,0 +1,12 @@
+Komodo already has upload feature, but it's not very usable, because it takes a lot of clicks to actually upload a file to remote server. You'd have to choose server, and then target path each time. It misses really quick solution, where project's upload settings are preconfigured, and all you need is actually commit file, with no questions asked.
+
+Uploader makes web programmer's life brighter. First, if you assign a keyboard shortcut to "General: Upload" command, you can commit project files immediately. Then, if you configure your project for automatic upload, project files will be uploaded on each save action, exactly like in NetBeans.
+
+Configuration:
+
+go to Edit / Preferences / Server
+add new remote account with a name matching the name of your project
+precede the name with "*" to enable Auto Upload feature for this project
+that's it!
+
+** WARNING: This file is under construction ;) Will be replaced with real README.md soon. **
